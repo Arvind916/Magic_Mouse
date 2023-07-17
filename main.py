@@ -9,7 +9,7 @@ index_y = 0
 while True:
     _, frame = cap.read()
     frame = cv2.flip(frame, 1)
-    frame_height, frame_width, _= frame.shape
+    frame_height, frame_width, _= frame.shpe
     rgb_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
     output = hand_detector.process(rgb_frame)
     hands = output.multi_hand_landmarks
